@@ -1,7 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>Where's My True Love</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <style type="text/css">
 @font-face {
@@ -19,32 +18,39 @@
 <body>
 <div id="mainDiv">
   <div id="content">
-    <div style="margin-top: 112.5px;" id="code"> <span class="comments">/**</span><br>
-      <span class="space"><span class="comments">* @Title: Marry_Me, </span><br>
-      <span class="space"><span class="comments">* @author xuxc </span><br>
-      <span class="space"><span class="comments">* @param 77perch</span><br>
-      <span class="space"><span class="comments">*/</span><br>
-      Boy * i = <span class="keyword">new</span> Boy(<span class="string">"xuxc"</span>);<br>
-      Girl * u = <span class="keyword">new</span> Girl(<span class="string">"吴栖君"</span>);<br>
-      <span class="comments">//亲爱的，原谅我的不解风情.</span><br>
-      i.meet(u);<br>
-      <span class="comments">//也感谢你对我的宽容与信任.</span><br>
-      i.connect(u);<br>
-      <span class="comments">//现在也请你接受我对你的爱</span><br>
-      i.love(u);<br>
-      <span class="comments">//I want to be your favorite hello and hardest goodbye.</span><br>
-      <span class="comments">//Love at me.</span><br>
-      <span class="keyword">boolean</span> isAccept = <span class="keyword">true</span>;<br>
-      <span class="keyword">while</span> (isAccept) {<br>
-      <span class="placeholder">i.takeCareOf(u);<br>
-      <span class="placeholder"><span class="comments">//让我变成一架电梯，升降你的所有悲喜.</span><br>
-      <span class="placeholder"><span class="comments">//曾经沧海难为水，除却巫山不是云.</span><br>
-      <span class="placeholder">isAccept = u.agreeMarry();<br>
+    <div style="margin-top: 112.5px;" id="code"> 
+      <span class="comments">/**</span><br>
+      <span class="space"><span class="comments">* @Title: Marry_Me, </span></span><br>
+      <span class="space"><span class="comments">* @author xuxc </span></span><br>
+      <span class="space"><span class="comments">* @param 77perch</span></span><br>
+      <span class="space"><span class="comments">*/</span></span><br>
+      Boy  i = <span class="keyword">new</span> Boy(<span class="string">"xuxc"</span>);<br>
+      Girl  u = <span class="keyword">new</span> Girl(<span class="string">"吴栖君"</span>);<br>
+      <span class="comments">//我们的故事从那年盛夏开始</span><br>
+      	i.setTime(2010,6,19).meet(u);<br>
+		u.setBoyFriend(i);<br>
+		i.setGirlFriend(u);<br>
+      <span class="comments">//熬过了年复一年的异地，我站在了你的眼前</span><br>
+      for(<span class="keyword">int</span> time=i.getYear();time &lt now;time++){<br>
+      <span class="placeholder"><span class="comments">//我们有过欢笑有过争吵有过甜蜜也有过苦涩</span></span><br>
+      <span class="placeholder">We.chat();</span><br>
+  	  <span class="placeholder">We.walk();</span><br>
+      <span class="placeholder"><span class="comments">//和你去走青石板，和你去踩细流沙</span></span><br>
+      <span class="placeholder">We.travel();</span></span><br>
       }<br>
-      i.need(u);<br>
-      i.want(u);<br>
-      <span class="comments"><font color="blue">//嫁给我吧，七七大人!</font></span><br>
-      </span></span></span></span></span></span></span></div>
+      <span class="comments">//生活不易，我们都很珍惜</span><br>
+      We.overcome(difficulties);<br>
+      <span class="comments">//今天，请答应我</span><br>
+      <span class="keyword">boolean</span> marryMe = u.agree();<br>
+	  <span class="comments">//让我成为那个幸福的人</span><br>
+      if(marryMe){<br>
+      <span class="placeholder">for(<span class="keyword">int</span> years=now;years &lt u.lifeAge;years++){</span><br>
+      <span class="placeholder"><span class="placeholder"><span class="comments">//u r my favorite hello and hardest goodbye.</span></span></span><br>
+      <span class="placeholder"><span class="placeholder">i.takeCareOf(u);</span></span><br>
+      <span class="placeholder">}</span><br>
+	  <span class="keyword">return</span> myLove;
+
+      </div>
     <div id="loveHeart">
       <canvas id="garden"></canvas>
       <div id="words" >

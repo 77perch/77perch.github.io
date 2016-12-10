@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <!--第一段：搜索界面--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/1search/1default.css">
+    <link rel="stylesheet" type="text/css" href="css/1search/1search-form.css">
+    <!--第一段：进度条--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/2load/2loading.css">
+    <!--第三段：粒子文字-->
+    <link rel="stylesheet" type="text/css" href="css/3word/3canvas.css">
+    <link rel="stylesheet" type="text/css" href="css/3word/3button.css">
+    <!--全屏滚动-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+
+
+</head>
+<body>
+<div id="backgroud" class="bg" style="position: absolute;width: 100%;height: 100%;overflow: hidden;">
+    <div id="pageOne">
+        <div id="searchDiv">
+            <form onsubmit="submitFn(this, event);">
+                <div class="search-wrapper">
+                    <div class="input-holder ">
+                        <input type="password" class="search-input" placeholder="Type to search"/>
+                        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                    </div>
+                    <span class="close" onclick="searchToggle(this, event);"></span>
+                </div>
+            </form>
+        </div>
+        <div id="loadingBar" hidden class="search-wrapper" style=" top:80%;">
+            <span class="expand"></span>
+        </div>
+    </div>
+    <div id="pageTwo" hidden style="position: relative;width: 100%;height: 100%;">
+        <canvas class="canvas"></canvas>
+        <div class="ui">
+            <input class="ui-input" type="text"/>
+            <div id="nextBtn" style="padding: 10px;">
+                <a class="btn btn-1"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>Next</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="fullPage" hidden>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">
+        <div class="slide"> Slide 1 </div>
+        <div class="slide"> Slide 2 </div>
+        <div class="slide"> Slide 3 </div>
+        <div class="slide"> Slide 4 </div>
+    </div>
+</div>
+
+<!--第一段：搜索界面--JS-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/1search.js"></script>
+<!--第三段：粒子文字-->
+<script src="js/3word/3word.js"></script>
+<!--第三段：全屏滚动-->
+<script src="js/jquery.fullPage.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes fadeAllIn {
+    0%, 50% {
+        opacity: 0;
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeAllIn {
+    0%, 50% {
+        opacity: 0;
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Individual demo styles */
+.demo-3 {
+    background: #e8e8ec;
+    margin-top: 0;
+    margin-left: 0;
+    color: #333;
+    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.demo-3 a {
+    color: #9e9e9e;
+}
+
+.demo-3 a:hover, .demo-3 a:focus {
+
+    outline: none;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Icons */
+.icon {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 auto;
+    fill: currentColor;
+}
+
+/* Header */
+.codrops-header {
+    margin: 12vh 0 0 10%;
+    padding: 2em;
+    position: relative;
+}
+
+.demo-3 .codrops-header {
+    text-align: center;
+    position: absolute;
+    width: calc(80vw - 5px);
+    top: 15vh;
+    left: 10vw;
+    height: calc(70vh - 5px);
+    margin: 5px 0 0 5px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 100px, 0);
+    -webkit-animation: fadeIn 2s ease-out forwards;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@-webkit-keyframes fadeIn {
+    0%, 40% {
+        opacity: 0;
+    }
+    85%, 100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    0%, 40% {
+        opacity: 0;
+    }
+    85%, 100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.codrops-header__title {
+    margin: 0;
+    padding: 0 0 0.15em 0;
+    font-size: 9vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.demo-3 .codrops-header__title {
+    font-family: 'Kaushan Script', cusrive;
+    text-transform: none;
+    font-size: 14vw;
+    color: #000;
+    margin: 0;
+    padding: 0 0 0.35em;
+}
+
+.demo-3 .sponsor {
+    color: #727272;
+}
+
+.dummy {
+    width: 100%;
+    display: -webkit-flex;
+
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+    height: 15vh;
+}
+
+.dummy__icon {
+    width: calc(10vw - 20px);
+    color: #b0b0b1;
+}
+
+.decolines {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    pointer-events: none;
+}
+
+.decolines--fixed {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.decoline {
+    position: absolute;
+}
+
+
+
